@@ -1,0 +1,22 @@
+#!/bin/bash
+######################################
+# Author  : Rebecca Louie
+# Date    : March 8th 2018
+# Fuction : Use bash scripting to create new files and change them to executables
+# Usage   : ./NewFile
+######################################
+
+#!/bin/bash
+echo -n "Give Filename"
+read filename
+echo "#!/bin/bash"
+echo "########################################"
+echo "# Author   : Rebeecca Louie">>$filename
+echo -n "# Date     : ">>$filename
+date>>$filename
+echo "# Function : ">>$filename
+echo -n "# Usage    : ">>$filename
+echo "$filename">>$filename
+echo "########################################"
+chmod 700 $filename
+vim $filename
