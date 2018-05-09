@@ -7,16 +7,16 @@
 ######################################
 
 #!/bin/bash
-echo -n "Give Filename"
+echo -n "Give Filename "
 read filename
-echo "#!/bin/bash"
-echo "########################################"
+echo "#!/bin/bash">>$filename
+echo "########################################">>$filename
 echo "# Author   : Rebeecca Louie">>$filename
 echo -n "# Date     : ">>$filename
 date>>$filename
 echo "# Function : ">>$filename
 echo -n "# Usage    : ">>$filename
 echo "$filename">>$filename
-echo "########################################"
+echo "########################################">>$filename
 chmod 700 $filename
 vim $filename
