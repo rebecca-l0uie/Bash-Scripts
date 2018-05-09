@@ -15,7 +15,7 @@ echo "# Author   : Rebeecca Louie">>$filename
 echo -n "# Date     : ">>$filename
 date>>$filename
 echo "# Function : ">>$filename
-echo -n "# Usage    : ">>$filename
+echo -n "# Usage    : ./">>$filename
 echo "$filename">>$filename
 echo "########################################">>$filename
 chmod 700 $filename
